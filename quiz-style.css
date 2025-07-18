@@ -1,0 +1,126 @@
+/* overral settings */
+*
+{
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+body 
+{
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Patrick Hand", cursive;
+}
+
+.quiz-page {
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+.quiz-header {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.quiz-header h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #ff6f91;
+}
+
+.quiz-header p {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2em;
+    color: #444;
+}
+
+.quiz-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.quiz-question {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.quiz-option {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background: #ffb6c1;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.quiz-option:hover {
+    transform: scale(1.05);
+}
+
+.quiz-feedback {
+    margin-top: 20px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.4em;
+    color: #ff6f91;
+}
+
+#nextBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#nextBtn:hover {
+    transform: scale(1.05);
+}
+
+.back-btn-container
+{
+    padding: 20px;
+}
+
+.back-btn-container button
+{
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: #ffb6c1;
+
+    padding: 10px 20px;
+    border-radius: 30px;
+
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    font-weight: 500;
+    font-size: 16px;
+}
