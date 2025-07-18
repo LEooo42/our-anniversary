@@ -34,11 +34,6 @@ const questions = [
         q: "Where do we dream of traveling together?",
         options: ["Japan", "UK", "Italy"],
         answer: "UK"
-    },
-    {
-        q: "Where do we dream of traveling together?",
-        options: ["Japan", "UK", "Italy"],
-        answer: "UK"
     }
 ];
 
