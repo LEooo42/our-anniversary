@@ -16,7 +16,7 @@ const questions = [
         answer: "Harry Potter"
     },
     {
-        q: "Where did you confess my feelings?",
+        q: "Where did you confess your feelings?",
         options: ["At the beach", "On a train to Edinburgh", "In a coffee shop"],
         answer: "On a train to Edinburgh"
     },
