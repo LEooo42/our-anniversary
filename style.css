@@ -380,3 +380,33 @@ button
         font-size: 16px;
     }
 }
+
+@media (max-width: 600px) and (orientation: landscape) 
+{
+    .letter-image 
+    {
+        top: 75%; 
+        width: 120px;
+        height: 120px;
+    }
+
+    .animated-mail 
+    {
+        width: 120px;
+        height: 90px;
+    }
+
+    .animated-mail .letter 
+    {
+        left: 12px;
+        width: 96px;
+        height: 36px;
+    }
+
+    .letter-image.is-open .animated-mail .letter 
+    {
+        width: 85vw;
+        height: 65vh;
+        font-size: 1.2em;
+    }
+}
