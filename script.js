@@ -1,13 +1,12 @@
 const envelope = document.querySelector('.letter-image');
-envelope.addEventListener('click', triggerConfetti);
-envelope.addEventListener('touchstart', triggerConfetti);
-
-function triggerConfetti() {
-    this.classList.add('is-open');
-    confetti({
-        particleCount: 150,
-        spread: 70,
-        origin: { y: 0.6 }
+if (envelope) {
+    envelope.addEventListener('click', function() {
+        this.classList.add('is-open');
+        confetti({
+            particleCount: 150,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
     });
 }
 
