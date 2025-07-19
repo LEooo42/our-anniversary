@@ -124,6 +124,12 @@ body
     transform: translateY(0);
 }
 
+.date-txt
+{
+    text-align: center;
+    font-size: 20px;
+}
+
 .back-btn-container
 {
     padding: 20px;
