@@ -74,12 +74,11 @@ function checkAnswer(button, correctAnswer) {
     const feedback = document.getElementById('feedback');
     if (button.textContent === correctAnswer) {
         feedback.textContent = "💖 Correct, you know us so well!";
+        document.querySelectorAll('.quiz-option').forEach(btn => btn.disabled = true);
+        document.getElementById('nextBtn').style.display = "inline-block";
     } else {
         feedback.textContent = "Oops! Try again, love!";
     }
-
-    document.querySelectorAll('.quiz-option').forEach(btn => btn.disabled = true);
-    document.getElementById('nextBtn').style.display = "inline-block";
 }
 
 function nextQuestion() {
