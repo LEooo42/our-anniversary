@@ -23,30 +23,35 @@ body
 {
     width: 80%;
     margin: 0 auto;
-    position: relative;
     padding: 50px 0;
+    position: relative;
 }
 
 .timeline::before 
 {
-    content: '';
     position: absolute;
     left: 50%;
+
     width: 4px;
     height: 100%;
+
+    content: '';
     background: #ffb6c1;
+
     transform: translateX(-50%);
 }
 
 .timeline-item 
 {
     position: relative;
-    width: 50%;
     padding: 20px;
-    box-sizing: border-box;
+
+    width: 50%;
+
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.6s ease;
+
     display: flex;
     justify-content: space-between;
 }
@@ -63,35 +68,39 @@ body
 
 .timeline-icon 
 {
-    background: #fff;
-    border: 3px solid #ffb6c1;
+    position: absolute;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    position: absolute;
     top: 20px;
     left: 70%;
-    transform: translateX(-50%);
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #ffb6c1;
+    transform: translateX(-50%);
     font-size: 24px;
 }
 
 .timeline-icon-top
 {
-    background: #fff;
-    border: 3px solid #ffb6c1;
+    position: absolute;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    position: absolute;
     top: 20px;
     left: 50%;
-    transform: translateX(-50%);
+
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    background: #fff;
+    border: 3px solid #ffb6c1;
+    border-radius: 50%;
+    transform: translateX(-50%);
     font-size: 24px;
 }
 
@@ -118,21 +127,91 @@ body
 .back-btn-container
 {
     padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+button 
+{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 15px;
 }
 
 .back-btn-container button
 {
-    height: 50px;
-    border: none;
-    color: white;
-    background-color: #ffb6c1;
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 1.25em 2em;
+    background: #fff0f0;
+    border: 2px solid #b18597;
+    border-radius: 0.75em;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
 
-    padding: 10px 20px;
-    border-radius: 30px;
+.back-btn-container button::before
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9c4d2;
+    border-radius: inherit;
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0.75em, -1em);
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
 
-    cursor: pointer;
-    transition: transform 0.2s;
+.back-btn-container button:hover
+{
+    background: #ffe9e9;
+    -webkit-transform: translate(0, 0.25em);
+    transform: translate(0, 0.25em);
+}
 
-    font-weight: 500;
-    font-size: 16px;
+.back-btn-container button:hover::before
+{
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0.5em, -1em);
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+.back-btn-container button:active
+{
+    background: #ffe9e9;
+    -webkit-transform: translate(0em, 0.75em);
+    transform: translate(0em, 0.75em);
+}
+
+.back-btn-container button:active::before
+{
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0, -1em);
+    transform: translate3d(0, 0, -1em);
+}
+
+@media (max-width: 768px) 
+{
+    .timeline-icon 
+    {
+        display: none;
+    }
 }
