@@ -244,3 +244,82 @@ body
     font-weight: 700;
     user-select: none;
 }
+
+
+@media (max-width: 600px) 
+{
+
+    .top-options-container 
+    {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top-options-container button 
+    {
+        width: 100%;        
+        font-size: 1.2em;
+        padding: 6px 12px;
+        box-sizing: border-box;
+    }
+
+    .letter-image 
+    {
+        width: 150px;
+        height: 150px;
+        top: 65%;
+    }
+
+    .animated-mail 
+    {
+        width: 150px;
+        height: 112px;
+    }
+
+    .animated-mail .body 
+    {
+        border-width: 0 0 75px 150px;
+    }
+
+    .animated-mail .top-fold 
+    {
+        top: 37px;
+        border-width: 37px 75px 0 75px;
+    }
+
+    .animated-mail .back-fold 
+    {
+        width: 150px;
+        height: 75px;
+    }
+
+    .animated-mail .left-fold 
+    {
+        border-width: 37px 0 37px 75px;
+    }
+
+    .animated-mail .letter 
+    {
+        left: 15px;
+        width: 120px;
+        height: 45px;
+    }
+
+    .letter-image:hover .animated-mail .letter 
+    {
+        width: 85vw;
+        height: 65vh;
+        font-size: 1.5em;
+    }
+
+    .letter-context-body img 
+    {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .open-me-text 
+    {
+        font-size: 16px;
+    }
+}
