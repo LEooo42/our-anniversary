@@ -312,6 +312,7 @@ button
     transform: translateY(-50%);
     width: 150px; 
     z-index: -1; 
+    user-select: none;
 }
 
 @media (max-width: 600px) 
