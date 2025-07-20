@@ -17,6 +17,8 @@ body
     padding: 0;
 
     font-family: "Patrick Hand", cursive;
+
+    overflow-x: hidden;
 }
 
 /* top buttons */
@@ -302,9 +304,22 @@ button
     user-select: none;
 }
 
+.bottom-img-container
+{
+    position: absolute;
+    top: 50%;
+    left: 65%;  
+    transform: translateY(-50%);
+    width: 150px; 
+    z-index: -1; 
+}
 
 @media (max-width: 600px) 
 {
+    .bottom-img-container 
+    {
+        display: none;
+    }
 
     .top-options-container 
     {
@@ -379,34 +394,9 @@ button
     {
         font-size: 16px;
     }
-}
 
-@media (max-width: 600px) and (orientation: landscape) 
-{
-    .letter-image 
+    .close-letter-btn 
     {
-        top: 75%; 
-        width: 120px;
-        height: 120px;
-    }
-
-    .animated-mail 
-    {
-        width: 120px;
-        height: 90px;
-    }
-
-    .animated-mail .letter 
-    {
-        left: 12px;
-        width: 96px;
-        height: 36px;
-    }
-
-    .letter-image.is-open .animated-mail .letter 
-    {
-        width: 85vw;
-        height: 65vh;
-        font-size: 1.2em;
+        display: block; 
     }
 }
