@@ -315,6 +315,28 @@ button
     user-select: none;
 }
 
+.letter-image:hover .animated-mail .letter::-webkit-scrollbar 
+{
+    width: 10px;
+}
+
+.letter-image:hover .animated-mail .letter::-webkit-scrollbar-track 
+{
+    background: #ffe6f0;  
+    border-radius: 10px;
+}
+
+.letter-image:hover .animated-mail .letter::-webkit-scrollbar-thumb 
+{
+    background: #ff99c8;  
+    border-radius: 10px;
+}
+
+.letter-image:hover .animated-mail .letter::-webkit-scrollbar-thumb:hover 
+{
+    background: #ff66a3; 
+}
+
 @media (max-width: 600px) 
 {
     .bottom-img-container 
